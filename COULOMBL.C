@@ -11,20 +11,22 @@ CoulLaw.C -- This program will calculate the force of attraction
      the programmer and the compiler to work together to find
      errors in code.
 	 #include <conio.h>
+	 #include <caca_conio.h>
+	 #include <ncurses.h>
 */
 
-#include </usr/include/stdio.h>
+#include <stdio.h>
 
-#include </usr/include/caca_conio.h>
 
-void main(void)
+
+int main()
 {
   double Q1, Q2, Distance, Force;
   const double k = 9000000000.;
 
 
 
-  clrscr();
+ /*  clrscr(); */
 
   printf("\n\nPlease enter all requested values using basic metric units:");
 
@@ -39,9 +41,9 @@ void main(void)
 
   Force =k * Q1 * Q2/(Distance*Distance);
 
-  clrscr();
+/*   clrscr(); */
   printf("\n\n\n\nWith Q1 = %f Coulombs, and Q2 = %f Coulombs, ", Q1, Q2);
   printf("and\nseparated by %f meters, the force between them is %f Newtons",Distance, Force);
-  getch();  /* wait for user keystroke (when finished reading) */
-  return 1;
+  /*getch();   wait for user keystroke (when finished reading) */
+  return 0;
 }
