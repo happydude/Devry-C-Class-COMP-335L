@@ -5,18 +5,14 @@ Sign off:____________________________             Row #:7
 
 Date:    ___07/17/1997___                         Due:
 
-
+#include <conio.h>
 */
 #include <stdio.h>
-#include <conio.h>
 
-void main(void)
+
+int main()
 {
 double ctemp,ftemp,result;
-
-
-clrscr(); /*clear the screen*/
-
 
  printf("This program will convert a Celsius temperature\n");
  printf("to a Fahrenheit temperature.");
@@ -30,15 +26,13 @@ clrscr(); /*clear the screen*/
  ftemp = (1.8 * ctemp);
  result = ftemp + 32;
 
- clrscr(); /* Clear the screen*/
 
 /* Display the result*/
- printf("With a Celsius temperature of%lf you get a");
- printf("\nFarenheit temperature of %lf",ctemp,result);
+ printf("With a Celsius temperature of %lf you get a",ctemp);
+ printf("\nFarenheit temperature of %lf ",result);
+ printf("\n");
 
-
-/* Wait for user to read message*/
- getch();
+ return 0;
 }
 
 
